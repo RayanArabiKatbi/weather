@@ -71,7 +71,7 @@ abstract class WeatherCity implements Built<WeatherCity, WeatherCityBuilder> {
         .rebuild((b) => b
           ..coord.lon ??= 0
           ..coord.lat ??= 0
-          ..weather ??= ListBuilder<WeatherName>()
+          ..weather
           ..base ??= ''
           ..main.temp ??= 0
           ..main.feelsLike ??= 0

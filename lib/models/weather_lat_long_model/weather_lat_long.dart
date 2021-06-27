@@ -72,7 +72,7 @@ abstract class WeatherLatLong
         .rebuild((b) => b
           ..coord.lon ??= 0
           ..coord.lat ??= 0
-          ..weather ??= ListBuilder<Weather>()
+          ..weather
           ..base ??= ''
           ..main.temp ??= 0
           ..main.feelsLike ??= 0

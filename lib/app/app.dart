@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather/screens/main_tabs/page/main_tabs.dart';
 
 class App extends StatefulWidget {
   const App({
@@ -12,6 +13,10 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      color: Color(0xFF223644),
+      debugShowCheckedModeBanner: false,
+      home: MainTabs(),
+    );
   }
 }
